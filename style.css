@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --accent: #EA918D;
+    --accenthover: #DE8A86;
+    --dark: #304659;
+    --dark80: rgba(48,70,89,.8);
+    --dark60: rgba(48,70,89,.6);
+    --light: #f5f9fc;
+    --transition: all 0.3s ease 0s;
+}
+
+* {
+    box-sizing: boarder-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background:
+        linear-gradient(
+            var(--dark60),
+            var(--dark60)
+        ),
+        url(./Images/DSC_0132.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+p, a, button {
+    font-family: "Lato", sans-serif;
+    color: var(--light);
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+
+header {
+    grid-column: 2 / span 6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.links a, .links button {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.links a {
+    margin-right: 50px;
+}
+
+.links a:hover {
+    color: var(--accent);
+}
+
+.button_med {
+    border: none;
+    background-color: var(--accent);
+    padding: 8px 25px;
+    transition: var(--transition);
+}
+
+.button_med:hover {
+    background-color: var(--accenthover);
+}
+
+.info {
+    grid-column: 2 / span 4;
+}
+
+.hero_font {
+    color: var(--light);
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 4.375rem;
+}
+
+.intro {
+    color: var(--light);
+}
