@@ -102,4 +102,18 @@ nav {
 .intro {
     color: var(--light);
     font-size: 2rem;
+    font-family: "Lato", sans-serif;
+}
+
+.paragraphs {
+    color: var(--light);
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.paragraphs_lists {
+    color: var(--light);
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    padding-left: 1.25rem;
 }
